@@ -1,13 +1,13 @@
 package com.xiom.Inventario.service;
 
 
-import com.xiom.Inventario.dao.ProductoRepository;
-import com.xiom.Inventario.models.Producto;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-
-import java.util.List;
+import com.xiom.Inventario.dao.ProductoRepository;
+import com.xiom.Inventario.models.Producto;
 
 
 @Service
@@ -20,4 +20,3 @@ public class ProductoService  {
         return  productoRepository.findAll();
     }
 }
-s+
