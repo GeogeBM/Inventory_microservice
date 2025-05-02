@@ -1,11 +1,11 @@
 package com.xiom.Inventario.models;
 
-import jakarta.persistence.*;
-import lombok.Builder;
-import lombok.Data;
-
-import javax.swing.tree.DefaultTreeCellEditor;
-import java.util.Date;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 //@Builder
 @Entity
 @Table(name = "PRODUCTOS")
@@ -13,7 +13,6 @@ public class Producto {
     @Id
     @Column(name="Id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Builder.Default
     Long id=0L;
     @Column(name="NOMBRE")
     String nombre;
