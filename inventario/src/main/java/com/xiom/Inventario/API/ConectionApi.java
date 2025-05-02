@@ -15,15 +15,11 @@ import java.util.List;
 @RequestMapping("/api")
 public class ConectionApi {
 
-    @Autowired
-    private ProductoService productoService;
+    
     @RequestMapping(value = "/hello", method = RequestMethod.GET)
     public String Saludo(){
         return  "Hola mundo";
     }
 
-    @RequestMapping(value = "/productos",method = RequestMethod.GET)
-    public List<Producto> getAllProductos(){
-        return productoService.ListaProductos();
-    }
+    
 }
